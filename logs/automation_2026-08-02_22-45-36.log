@@ -1,0 +1,224 @@
+08/02/2026 10:45:37 PM - INFO - 
+=========================================================================================
+            API Name      :  Register_User
+            HTTP Method   :  POST
+            URL           :  https://api.eventhub.rahulshettyacademy.com/api/auth/register
+            Payload       :  {
+                              "email": "zlozhvqjkp@abcmail.com",
+                              "password": "********"
+}
+            Status Code   :  201
+            Response      :  {
+                              "success": true,
+                              "token": "********",
+                              "user": {
+                                                            "id": 35765,
+                                                            "email": "zlozhvqjkp@abcmail.com"
+                              }
+}
+            Response Time :  282.68 ms
+            
+08/02/2026 10:45:37 PM - INFO - Test Case Name is: Login & Create a new event.
+
+08/02/2026 10:45:37 PM - INFO - 
+=========================================================================================
+            API Name      :  Login_User
+            HTTP Method   :  POST
+            URL           :  https://api.eventhub.rahulshettyacademy.com/api/auth/login
+            Payload       :  {
+                              "email": "zlozhvqjkp@abcmail.com",
+                              "password": "********"
+}
+            Status Code   :  200
+            Response      :  {
+                              "success": true,
+                              "token": "********",
+                              "user": {
+                                                            "id": 35765,
+                                                            "email": "zlozhvqjkp@abcmail.com"
+                              }
+}
+            Response Time :  131.61 ms
+            
+08/02/2026 10:45:37 PM - INFO - Login Test: Validating status code. || Expected: 200 | Actual: 200
+
+08/02/2026 10:45:37 PM - INFO - [Login_Test] Schema validation passed using model: LoginResponse
+08/02/2026 10:45:37 PM - INFO -  : Key 'success' found in response
+08/02/2026 10:45:37 PM - INFO -  : Key 'token' found in response
+08/02/2026 10:45:37 PM - INFO -  : Key 'user' found in response
+08/02/2026 10:45:37 PM - INFO - 
+=========================================================================================
+            API Name      :  Create_Event
+            HTTP Method   :  POST
+            URL           :  https://api.eventhub.rahulshettyacademy.com/api/events
+            Payload       :  {
+                              "title": "znhg0e",
+                              "description": "qyegroxgwu",
+                              "category": "Seminar",
+                              "venue": "Hotel Ballroom",
+                              "city": "Philadelphia",
+                              "eventDate": "2028-04-16",
+                              "price": 333,
+                              "totalSeats": 338,
+                              "imageUrl": "https://example.com/uzyzm.jpg"
+}
+            Status Code   :  201
+            Response      :  {
+                              "success": true,
+                              "data": {
+                                                            "id": 87428,
+                                                            "title": "znhg0e",
+                                                            "description": "qyegroxgwu",
+                                                            "category": "Seminar",
+                                                            "venue": "Hotel Ballroom",
+                                                            "city": "Philadelphia",
+                                                            "eventDate": "2028-04-16T00:00:00.000Z",
+                                                            "price": "333",
+                                                            "totalSeats": 338,
+                                                            "availableSeats": 338,
+                                                            "imageUrl": "https://example.com/uzyzm.jpg",
+                                                            "isStatic": false,
+                                                            "userId": 35765,
+                                                            "createdAt": "2026-08-02T17:15:37.675Z",
+                                                            "updatedAt": "2026-08-02T17:15:37.675Z"
+                              },
+                              "message": "Event created successfully"
+}
+            Response Time :  49.05 ms
+            
+08/02/2026 10:45:37 PM - INFO - Create a new event.: Validating status code. || Expected: 201 | Actual: 201
+
+08/02/2026 10:45:37 PM - INFO - [Create a new event.] Schema validation passed using model: CreateNewEventResponse
+08/02/2026 10:45:37 PM - INFO -  Create a new event.: Key 'success' found in response
+08/02/2026 10:45:37 PM - INFO -  Create a new event.: Key 'data' found in response
+08/02/2026 10:45:37 PM - INFO -  Create a new event.: Key 'message' found in response
+08/02/2026 10:45:37 PM - INFO - Create a new event.: Validating message. || Expected: Event created successfully | Actual: Event created successfully
+08/02/2026 10:45:37 PM - INFO - : Compare values for 338 & 338.
+08/02/2026 10:45:37 PM - INFO - Test Case Name is: Test case to register a new user using the EventHub API.
+
+08/02/2026 10:45:37 PM - INFO - 
+=========================================================================================
+            API Name      :  Register_User
+            HTTP Method   :  POST
+            URL           :  https://api.eventhub.rahulshettyacademy.com/api/auth/register
+            Payload       :  {
+                              "email": "fmxidzbamm@abcmail.com",
+                              "password": "********"
+}
+            Status Code   :  201
+            Response      :  {
+                              "success": true,
+                              "token": "********",
+                              "user": {
+                                                            "id": 35766,
+                                                            "email": "fmxidzbamm@abcmail.com"
+                              }
+}
+            Response Time :  148.68 ms
+            
+08/02/2026 10:45:37 PM - INFO - Register New User: Validating status code. || Expected: 201 | Actual: 201
+
+08/02/2026 10:45:37 PM - INFO - [Register New User] Schema validation passed using model: RegisterResponse
+08/02/2026 10:45:37 PM - INFO -  : Key 'success' found in response
+08/02/2026 10:45:37 PM - INFO -  : Key 'token' found in response
+08/02/2026 10:45:37 PM - INFO -  : Key 'user' found in response
+08/02/2026 10:45:37 PM - INFO -  : Key 'id' found in response
+08/02/2026 10:45:37 PM - INFO -  : Key 'email' found in response
+08/02/2026 10:45:37 PM - INFO - Test Case Name is: Graphql Test case: test_create_new_location
+
+08/02/2026 10:45:37 PM - INFO - 
+=========================================================================================
+            API Name      :  GraphQL_Create_New_Location
+            HTTP Method   :  POST
+            URL           :  https://rahulshettyacademy.com/gq/graphql
+            Payload       :  {
+                              "query": "\n        mutation CreateLocation(\n            $name: String!,\n            $type: String!,\n            $dimension: String!\n        ) {\n            createLocation(\n                location: {\n                    name: $name\n                    type: $type\n                    dimension: $dimension\n                }\n            ) {\n                id\n            }\n        }\n        ",
+                              "variables": {
+                                                            "name": "jujcvdavro",
+                                                            "type": "swddyisihv",
+                                                            "dimension": "geizuubgih"
+                              },
+                              "operationName": "CreateLocation"
+}
+            Status Code   :  200
+            Response      :  {
+                              "data": {
+                                                            "createLocation": {
+                                                                                          "id": 34582
+                                                            }
+                              }
+}
+            Response Time :  134.57 ms
+            
+08/02/2026 10:45:37 PM - INFO - Create a new location: Validating status code. || Expected: 200 | Actual: 200
+
+08/02/2026 10:45:37 PM - INFO -  Create new location: Key 'data' found in response
+08/02/2026 10:45:37 PM - INFO -  Create new location: Key 'id' found in response
+08/02/2026 10:45:37 PM - INFO - Test Case Name is: Library_Book_Management_Workflow_Add and Delete
+
+08/02/2026 10:45:38 PM - INFO - 
+=========================================================================================
+            API Name      :  Add Book
+            HTTP Method   :  POST
+            URL           :  http://216.10.245.166/Library/Addbook.php
+            Payload       :  {
+                              "name": "yzryhwjngq",
+                              "isbn": "3yq1ye",
+                              "aisle": 135,
+                              "author": "iwrmsnvqnh"
+}
+            Status Code   :  200
+            Response      :  {
+                              "Msg": "successfully added",
+                              "ID": "3yq1ye135"
+}
+            Response Time :  68.89 ms
+            
+08/02/2026 10:45:38 PM - INFO - Add a Book: Validating status code. || Expected: 200 | Actual: 200
+
+08/02/2026 10:45:38 PM - INFO - [Add a Book] Schema validation passed using model: AddBookResponse
+08/02/2026 10:45:38 PM - INFO - Add a Book: Validating message. || Expected: successfully added | Actual: successfully added
+08/02/2026 10:45:38 PM - INFO -  Add a Book: Key 'Msg' found in response
+08/02/2026 10:45:38 PM - INFO -  Add a Book: Key 'ID' found in response
+08/02/2026 10:45:38 PM - INFO - 
+=========================================================================================
+            API Name      :  Delete Book
+            HTTP Method   :  POST
+            URL           :  http://216.10.245.166/Library/DeleteBook.php?ID=3yq1ye135
+            Payload       :  {
+                              "ID": "3yq1ye135"
+}
+            Status Code   :  200
+            Response      :  {
+                              "msg": "book is successfully deleted"
+}
+            Response Time :  50.64 ms
+            
+08/02/2026 10:45:38 PM - INFO - Delete a Book: Validating status code. || Expected: 200 | Actual: 200
+
+08/02/2026 10:45:38 PM - INFO - [Delete a Book] Schema validation passed using model: DeleteBookResponse
+08/02/2026 10:45:38 PM - INFO - Delete a Book: Validating message. || Expected: book is successfully deleted | Actual: book is successfully deleted
+08/02/2026 10:45:38 PM - INFO - Test Case Name is: SOAP Test Case: Get Version
+
+08/02/2026 10:45:38 PM - INFO - 
+=========================================================================================
+            API Name      :  SOAP_Get_Version
+            HTTP Method   :  POST
+            URL           :  http://216.10.245.166:8080/axis2/services/Version.VersionHttpSoap11Endpoint/
+            Payload       :  <ns0:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://axisversion.sample">
+
+<ns0:Header />
+
+<ns0:Body>
+    <ns1:getVersion />
+</ns0:Body>
+
+</ns0:Envelope>
+            Status Code   :  200
+            Response      :  <ns0:Envelope xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://axisversion.sample"><ns0:Body><ns1:getVersionResponse><ns1:return>Hi - the Axis2 version is 1.6.2</ns1:return></ns1:getVersionResponse></ns0:Body></ns0:Envelope>
+            Response Time :  49.50 ms
+            
+08/02/2026 10:45:38 PM - INFO - SOAP Test Case: Get Version: Validating status code. || Expected: 200 | Actual: 200
+
+08/02/2026 10:45:38 PM - INFO - SOAP Test Case: Get Version: Response Body: <?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns:getVersionResponse xmlns:ns="http://axisversion.sample"><ns:return>Hi - the Axis2 version is 1.6.2</ns:return></ns:getVersionResponse></soapenv:Body></soapenv:Envelope>
+08/02/2026 10:45:38 PM - INFO - SOAP Test Case: Get Version: XML tag './/ns:getVersionResponse/ns:return' found.

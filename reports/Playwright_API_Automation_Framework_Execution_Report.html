@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">Playwright_API_Automation_Framework_Execution_Report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">Playwright_API_Automation_Framework_Execution_Report.html</h1>
+    <p>Report generated on 02-Aug-2026 at 22:45:38 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</td>
+        </tr>
+      </tbody>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">5 tests took 00:00:02.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">5 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.12.3&#34;, &#34;Platform&#34;: &#34;Linux-6.17.0-35-generic-x86_64-with-glibc2.39&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.1.1&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.2.0&#34;, &#34;base-url&#34;: &#34;2.1.0&#34;, &#34;playwright&#34;: &#34;0.8.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;}, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;tests/Event_Hub_REST_API_Tests/test_eventManagementWorkflow.py::TestEventManagementFlow::test_event_management_flow&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/Event_Hub_REST_API_Tests/test_eventManagementWorkflow.py::TestEventManagementFlow::test_event_management_flow&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/Event_Hub_REST_API_Tests/test_eventManagementWorkflow.py::TestEventManagementFlow::test_event_management_flow&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  Register_User\n            HTTP Method   :  POST\n            URL           :  https://api.eventhub.rahulshettyacademy.com/api/auth/register\n            Payload       :  {\n                              &amp;quot;email&amp;quot;: &amp;quot;zlozhvqjkp@abcmail.com&amp;quot;,\n                              &amp;quot;password&amp;quot;: &amp;quot;********&amp;quot;\n}\n            Status Code   :  201\n            Response      :  {\n                              &amp;quot;success&amp;quot;: true,\n                              &amp;quot;token&amp;quot;: &amp;quot;********&amp;quot;,\n                              &amp;quot;user&amp;quot;: {\n                                                            &amp;quot;id&amp;quot;: 35765,\n                                                            &amp;quot;email&amp;quot;: &amp;quot;zlozhvqjkp@abcmail.com&amp;quot;\n                              }\n}\n            Response Time :  282.68 ms\n\n------------------------------ Captured log call -------------------------------\nINFO     automationLogger:api_validation.py:11 Test Case Name is: Login &amp;amp; Create a new event.\n\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  Login_User\n            HTTP Method   :  POST\n            URL           :  https://api.eventhub.rahulshettyacademy.com/api/auth/login\n            Payload       :  {\n                              &amp;quot;email&amp;quot;: &amp;quot;zlozhvqjkp@abcmail.com&amp;quot;,\n                              &amp;quot;password&amp;quot;: &amp;quot;********&amp;quot;\n}\n            Status Code   :  200\n            Response      :  {\n                              &amp;quot;success&amp;quot;: true,\n                              &amp;quot;token&amp;quot;: &amp;quot;********&amp;quot;,\n                              &amp;quot;user&amp;quot;: {\n                                                            &amp;quot;id&amp;quot;: 35765,\n                                                            &amp;quot;email&amp;quot;: &amp;quot;zlozhvqjkp@abcmail.com&amp;quot;\n                              }\n}\n            Response Time :  131.61 ms\n            \nINFO     automationLogger:api_validation.py:17 Login Test: Validating status code. || Expected: 200 | Actual: 200\n\nINFO     automationLogger:api_validation.py:25 [Login_Test] Schema validation passed using model: LoginResponse\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;success&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;token&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;user&amp;#x27; found in response\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  Create_Event\n            HTTP Method   :  POST\n            URL           :  https://api.eventhub.rahulshettyacademy.com/api/events\n            Payload       :  {\n                              &amp;quot;title&amp;quot;: &amp;quot;znhg0e&amp;quot;,\n                              &amp;quot;description&amp;quot;: &amp;quot;qyegroxgwu&amp;quot;,\n                              &amp;quot;category&amp;quot;: &amp;quot;Seminar&amp;quot;,\n                              &amp;quot;venue&amp;quot;: &amp;quot;Hotel Ballroom&amp;quot;,\n                              &amp;quot;city&amp;quot;: &amp;quot;Philadelphia&amp;quot;,\n                              &amp;quot;eventDate&amp;quot;: &amp;quot;2028-04-16&amp;quot;,\n                              &amp;quot;price&amp;quot;: 333,\n                              &amp;quot;totalSeats&amp;quot;: 338,\n                              &amp;quot;imageUrl&amp;quot;: &amp;quot;https://example.com/uzyzm.jpg&amp;quot;\n}\n            Status Code   :  201\n            Response      :  {\n                              &amp;quot;success&amp;quot;: true,\n                              &amp;quot;data&amp;quot;: {\n                                                            &amp;quot;id&amp;quot;: 87428,\n                                                            &amp;quot;title&amp;quot;: &amp;quot;znhg0e&amp;quot;,\n                                                            &amp;quot;description&amp;quot;: &amp;quot;qyegroxgwu&amp;quot;,\n                                                            &amp;quot;category&amp;quot;: &amp;quot;Seminar&amp;quot;,\n                                                            &amp;quot;venue&amp;quot;: &amp;quot;Hotel Ballroom&amp;quot;,\n                                                            &amp;quot;city&amp;quot;: &amp;quot;Philadelphia&amp;quot;,\n                                                            &amp;quot;eventDate&amp;quot;: &amp;quot;2028-04-16T00:00:00.000Z&amp;quot;,\n                                                            &amp;quot;price&amp;quot;: &amp;quot;333&amp;quot;,\n                                                            &amp;quot;totalSeats&amp;quot;: 338,\n                                                            &amp;quot;availableSeats&amp;quot;: 338,\n                                                            &amp;quot;imageUrl&amp;quot;: &amp;quot;https://example.com/uzyzm.jpg&amp;quot;,\n                                                            &amp;quot;isStatic&amp;quot;: false,\n                                                            &amp;quot;userId&amp;quot;: 35765,\n                                                            &amp;quot;createdAt&amp;quot;: &amp;quot;2026-08-02T17:15:37.675Z&amp;quot;,\n                                                            &amp;quot;updatedAt&amp;quot;: &amp;quot;2026-08-02T17:15:37.675Z&amp;quot;\n                              },\n                              &amp;quot;message&amp;quot;: &amp;quot;Event created successfully&amp;quot;\n}\n            Response Time :  49.05 ms\n            \nINFO     automationLogger:api_validation.py:17 Create a new event.: Validating status code. || Expected: 201 | Actual: 201\n\nINFO     automationLogger:api_validation.py:25 [Create a new event.] Schema validation passed using model: CreateNewEventResponse\nINFO     automationLogger:api_validation.py:37  Create a new event.: Key &amp;#x27;success&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  Create a new event.: Key &amp;#x27;data&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  Create a new event.: Key &amp;#x27;message&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:46 Create a new event.: Validating message. || Expected: Event created successfully | Actual: Event created successfully\nINFO     automationLogger:api_validation.py:65 : Compare values for 338 &amp;amp; 338.\n\n&#34;}], &#34;tests/Event_Hub_REST_API_Tests/test_register.py::TestRegisterNewUser::test_register_new_user&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/Event_Hub_REST_API_Tests/test_register.py::TestRegisterNewUser::test_register_new_user&#34;, &#34;duration&#34;: &#34;160 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/Event_Hub_REST_API_Tests/test_register.py::TestRegisterNewUser::test_register_new_user&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;160 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     automationLogger:api_validation.py:11 Test Case Name is: Test case to register a new user using the EventHub API.\n\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  Register_User\n            HTTP Method   :  POST\n            URL           :  https://api.eventhub.rahulshettyacademy.com/api/auth/register\n            Payload       :  {\n                              &amp;quot;email&amp;quot;: &amp;quot;fmxidzbamm@abcmail.com&amp;quot;,\n                              &amp;quot;password&amp;quot;: &amp;quot;********&amp;quot;\n}\n            Status Code   :  201\n            Response      :  {\n                              &amp;quot;success&amp;quot;: true,\n                              &amp;quot;token&amp;quot;: &amp;quot;********&amp;quot;,\n                              &amp;quot;user&amp;quot;: {\n                                                            &amp;quot;id&amp;quot;: 35766,\n                                                            &amp;quot;email&amp;quot;: &amp;quot;fmxidzbamm@abcmail.com&amp;quot;\n                              }\n}\n            Response Time :  148.68 ms\n            \nINFO     automationLogger:api_validation.py:17 Register New User: Validating status code. || Expected: 201 | Actual: 201\n\nINFO     automationLogger:api_validation.py:25 [Register New User] Schema validation passed using model: RegisterResponse\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;success&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;token&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;user&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;id&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  : Key &amp;#x27;email&amp;#x27; found in response\n\n&#34;}], &#34;tests/Graphql_Tests/test_createnewloc_graphql.py::TestCreateNewLocation::test_create_new_location&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/Graphql_Tests/test_createnewloc_graphql.py::TestCreateNewLocation::test_create_new_location&#34;, &#34;duration&#34;: &#34;145 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/Graphql_Tests/test_createnewloc_graphql.py::TestCreateNewLocation::test_create_new_location&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;145 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     automationLogger:api_validation.py:11 Test Case Name is: Graphql Test case: test_create_new_location\n\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  GraphQL_Create_New_Location\n            HTTP Method   :  POST\n            URL           :  https://rahulshettyacademy.com/gq/graphql\n            Payload       :  {\n                              &amp;quot;query&amp;quot;: &amp;quot;\\n        mutation CreateLocation(\\n            $name: String!,\\n            $type: String!,\\n            $dimension: String!\\n        ) {\\n            createLocation(\\n                location: {\\n                    name: $name\\n                    type: $type\\n                    dimension: $dimension\\n                }\\n            ) {\\n                id\\n            }\\n        }\\n        &amp;quot;,\n                              &amp;quot;variables&amp;quot;: {\n                                                            &amp;quot;name&amp;quot;: &amp;quot;jujcvdavro&amp;quot;,\n                                                            &amp;quot;type&amp;quot;: &amp;quot;swddyisihv&amp;quot;,\n                                                            &amp;quot;dimension&amp;quot;: &amp;quot;geizuubgih&amp;quot;\n                              },\n                              &amp;quot;operationName&amp;quot;: &amp;quot;CreateLocation&amp;quot;\n}\n            Status Code   :  200\n            Response      :  {\n                              &amp;quot;data&amp;quot;: {\n                                                            &amp;quot;createLocation&amp;quot;: {\n                                                                                          &amp;quot;id&amp;quot;: 34582\n                                                            }\n                              }\n}\n            Response Time :  134.57 ms\n            \nINFO     automationLogger:api_validation.py:17 Create a new location: Validating status code. || Expected: 200 | Actual: 200\n\nINFO     automationLogger:api_validation.py:37  Create new location: Key &amp;#x27;data&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  Create new location: Key &amp;#x27;id&amp;#x27; found in response\n\n&#34;}], &#34;tests/Library_Management_Rest_API_Tests/test_libraryWorkflow.py::Test_Library_Workflow::test_libraryworkflow&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/Library_Management_Rest_API_Tests/test_libraryWorkflow.py::Test_Library_Workflow::test_libraryworkflow&#34;, &#34;duration&#34;: &#34;149 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/Library_Management_Rest_API_Tests/test_libraryWorkflow.py::Test_Library_Workflow::test_libraryworkflow&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;149 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     automationLogger:api_validation.py:11 Test Case Name is: Library_Book_Management_Workflow_Add and Delete\n\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  Add Book\n            HTTP Method   :  POST\n            URL           :  http://216.10.245.166/Library/Addbook.php\n            Payload       :  {\n                              &amp;quot;name&amp;quot;: &amp;quot;yzryhwjngq&amp;quot;,\n                              &amp;quot;isbn&amp;quot;: &amp;quot;3yq1ye&amp;quot;,\n                              &amp;quot;aisle&amp;quot;: 135,\n                              &amp;quot;author&amp;quot;: &amp;quot;iwrmsnvqnh&amp;quot;\n}\n            Status Code   :  200\n            Response      :  {\n                              &amp;quot;Msg&amp;quot;: &amp;quot;successfully added&amp;quot;,\n                              &amp;quot;ID&amp;quot;: &amp;quot;3yq1ye135&amp;quot;\n}\n            Response Time :  68.89 ms\n            \nINFO     automationLogger:api_validation.py:17 Add a Book: Validating status code. || Expected: 200 | Actual: 200\n\nINFO     automationLogger:api_validation.py:25 [Add a Book] Schema validation passed using model: AddBookResponse\nINFO     automationLogger:api_validation.py:46 Add a Book: Validating message. || Expected: successfully added | Actual: successfully added\nINFO     automationLogger:api_validation.py:37  Add a Book: Key &amp;#x27;Msg&amp;#x27; found in response\nINFO     automationLogger:api_validation.py:37  Add a Book: Key &amp;#x27;ID&amp;#x27; found in response\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  Delete Book\n            HTTP Method   :  POST\n            URL           :  http://216.10.245.166/Library/DeleteBook.php?ID=3yq1ye135\n            Payload       :  {\n                              &amp;quot;ID&amp;quot;: &amp;quot;3yq1ye135&amp;quot;\n}\n            Status Code   :  200\n            Response      :  {\n                              &amp;quot;msg&amp;quot;: &amp;quot;book is successfully deleted&amp;quot;\n}\n            Response Time :  50.64 ms\n            \nINFO     automationLogger:api_validation.py:17 Delete a Book: Validating status code. || Expected: 200 | Actual: 200\n\nINFO     automationLogger:api_validation.py:25 [Delete a Book] Schema validation passed using model: DeleteBookResponse\nINFO     automationLogger:api_validation.py:46 Delete a Book: Validating message. || Expected: book is successfully deleted | Actual: book is successfully deleted\n\n&#34;}], &#34;tests/Soap_API_Tests/test_versionfinder.py::TestSOAPVersionService::test_get_version&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tests/Soap_API_Tests/test_versionfinder.py::TestSOAPVersionService::test_get_version&#34;, &#34;duration&#34;: &#34;125 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tests/Soap_API_Tests/test_versionfinder.py::TestSOAPVersionService::test_get_version&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;125 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     automationLogger:api_validation.py:11 Test Case Name is: SOAP Test Case: Get Version\n\nINFO     automationLogger:base_api_client.py:27 \n=========================================================================================\n            API Name      :  SOAP_Get_Version\n            HTTP Method   :  POST\n            URL           :  http://216.10.245.166:8080/axis2/services/Version.VersionHttpSoap11Endpoint/\n            Payload       :  &amp;lt;ns0:Envelope xmlns:ns0=&amp;quot;http://schemas.xmlsoap.org/soap/envelope/&amp;quot; xmlns:ns1=&amp;quot;http://axisversion.sample&amp;quot;&amp;gt;\n\n&amp;lt;ns0:Header /&amp;gt;\n\n&amp;lt;ns0:Body&amp;gt;\n    &amp;lt;ns1:getVersion /&amp;gt;\n&amp;lt;/ns0:Body&amp;gt;\n\n&amp;lt;/ns0:Envelope&amp;gt;\n            Status Code   :  200\n            Response      :  &amp;lt;ns0:Envelope xmlns:ns0=&amp;quot;http://schemas.xmlsoap.org/soap/envelope/&amp;quot; xmlns:ns1=&amp;quot;http://axisversion.sample&amp;quot;&amp;gt;&amp;lt;ns0:Body&amp;gt;&amp;lt;ns1:getVersionResponse&amp;gt;&amp;lt;ns1:return&amp;gt;Hi - the Axis2 version is 1.6.2&amp;lt;/ns1:return&amp;gt;&amp;lt;/ns1:getVersionResponse&amp;gt;&amp;lt;/ns0:Body&amp;gt;&amp;lt;/ns0:Envelope&amp;gt;\n            Response Time :  49.50 ms\n            \nINFO     automationLogger:api_validation.py:17 SOAP Test Case: Get Version: Validating status code. || Expected: 200 | Actual: 200\n\nINFO     automationLogger:api_validation.py:58 SOAP Test Case: Get Version: Response Body: &amp;lt;?xml version=&amp;#x27;1.0&amp;#x27; encoding=&amp;#x27;UTF-8&amp;#x27;?&amp;gt;&amp;lt;soapenv:Envelope xmlns:soapenv=&amp;quot;http://schemas.xmlsoap.org/soap/envelope/&amp;quot;&amp;gt;&amp;lt;soapenv:Body&amp;gt;&amp;lt;ns:getVersionResponse xmlns:ns=&amp;quot;http://axisversion.sample&amp;quot;&amp;gt;&amp;lt;ns:return&amp;gt;Hi - the Axis2 version is 1.6.2&amp;lt;/ns:return&amp;gt;&amp;lt;/ns:getVersionResponse&amp;gt;&amp;lt;/soapenv:Body&amp;gt;&amp;lt;/soapenv:Envelope&amp;gt;\nINFO     automationLogger:api_validation.py:89 SOAP Test Case: Get Version: XML tag &amp;#x27;.//ns:getVersionResponse/ns:return&amp;#x27; found.\n\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;Playwright_API_Automation_Framework_Execution_Report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  </body>
+</html>
